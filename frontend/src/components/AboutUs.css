@@ -1,0 +1,74 @@
+.about-us-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.about-us-image {
+  width: 100%;
+  height: 50vh; /* Default height for laptops/desktops */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.about-us-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the width while maintaining aspect ratio */
+}
+
+.about-us-text {
+  position: absolute;
+  top: 0%; 
+  left: 0%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 2px;
+  border-radius: 10px;
+  font-family: "Tinos", serif;
+}
+
+.about-us-text h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.about-us-text p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+  .about-us-text {
+    position: absolute;
+    top: 0%; /* Center vertically relative to the image */
+    left: 0%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 2px;
+    border-radius: 10px;
+    font-family: "Fijalla"
+  }
+  .about-us-image {
+    height: 30vh; 
+  }
+
+  .about-us-text h3 {
+    font-size: 25px;
+    font-family: "Fijalla"
+  }
+
+  .about-us-text p {
+    margin-top: 20px;
+    font-size: 15px;
+    font-family: "Fijalla";
+  }
+}
