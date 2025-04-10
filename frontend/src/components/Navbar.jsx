@@ -36,10 +36,10 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <motion.ul
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0.8, y: -25 }}
+          animate={{ opacity: 1, y: 20 }}
           transition={{ type: "spring", stiffness: 200 }}
-          className="md:hidden absolute top-16 left-2 w-full bg-[rgb(238,238,238)] p-4 flex flex-col gap-4 text-black font-bold"
+          className="md:hidden absolute top-16 left-0 w-full bg-[rgb(238,238,238)] p-4 flex flex-col gap-5 text-black font-bold"
         >
           <li className="cursor-pointer">Home</li>
           <li className="cursor-pointer">Projects</li>

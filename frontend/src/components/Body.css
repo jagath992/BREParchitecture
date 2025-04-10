@@ -1,27 +1,72 @@
 @font-face {
-  font-family: 'Tinos';
-  src: url('../Font/Tinos/Tinos-Regular.ttf') format('truetype');
+  font-family: 'Fjalla_One';
+  src: url('../Font/Fjalla_One/FjallaOne-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'Tinos';
-  src: url('../Font/Tinos/Tinos-Bold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-}
-
-.slogan-part{
-  margin-top: 20px;
-  font-weight: bold;
-  font-size: 50px;
+.slogan-part {
+  font-family: 'Fjalla_One', sans-serif;
   text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 40px;
 }
 
 @media (max-width: 768px) {
   .slogan-part {
-    margin-top: 10px;
-    font-size: 20px;
+    font-size: 24px;
+    margin-top: 20px;
+  }
+}
+
+.typing-line {
+  overflow: hidden;
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .typing-line {
+    white-space: normal; 
+    word-break: break-word; 
+    text-align: center;
+  }
+}
+
+.typing-text {
+  display: inline-block;
+  opacity: 0;
+  animation: typing 2s steps(30, end) forwards;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .typing-text {
+    animation: fadeIn 1.5s ease-in forwards;
+    white-space: normal;
+  }
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+    opacity: 1;
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
