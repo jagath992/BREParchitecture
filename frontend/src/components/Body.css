@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Tinos';
+  src: url('../Font/Tinos/Tinos-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tinos';
+  src: url('../Font/Tinos/Tinos-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+.slogan-part{
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .slogan-part {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+}
