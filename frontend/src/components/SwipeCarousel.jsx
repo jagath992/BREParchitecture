@@ -2,10 +2,10 @@ import React, { useEffect, useState } from "react";
 import { motion, useMotionValue } from "framer-motion";
 
 const imgs = [
-  "/Images/item%2001.png",
-  "/Images/item%2002.png",
-  "/Images/item%2003.png",
-  "/Images/item%2004.png",
+  "/horizontal/icon1.png",
+  "/horizontal/icon2.png",
+  "/horizontal/icon3.png",
+  "/horizontal/icon4.png",
 ];
 
 const ONE_SECOND = 1000;

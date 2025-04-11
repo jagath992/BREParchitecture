@@ -16,16 +16,16 @@
   overflow-x: hidden;
 }
 
-/* The scrolling row */
+
 .container {
   display: flex;
   overflow-x: auto;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
-  width: fit-content;
+  width: 100%;
   padding: 20px 10px; /* padding to both sides */
-  margin-top: 60px;
-  scrollbar-width: none;
+  margin-top: 30px;
+  scrollbar-width: 2px;
 }
 
 .container::-webkit-scrollbar {

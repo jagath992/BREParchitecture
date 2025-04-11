@@ -4,7 +4,6 @@ import Body from './components/Body';
 import { SwipeCarousel } from './components/SwipeCarousel';
 import AboutUs from './components/AboutUs';
 import Example from './components/HorizontalCaurosel';
-import Footer from './components/Footer';
 
 
 export default function App() {
@@ -15,7 +14,6 @@ export default function App() {
       <Body />
       <AboutUs />
       <Example />
-      <Footer />
     </>
   );
 }

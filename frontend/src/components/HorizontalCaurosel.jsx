@@ -10,18 +10,16 @@ const clamp = (value, clampAt = 30) => {
     return value < -clampAt ? -clampAt : value;
   }
 };
-
 const movies = [
-  "/breaking-bad.webp",
-  "/the-leftovers.jpg",
-  "/game-of-thrones.jpg",
-  "/true-detective.jpg",
-  "/walking-dead.jpg",
-  "/breaking-bad.webp",
-  "/the-leftovers.jpg",
-  "/game-of-thrones.jpg",
-  "/true-detective.jpg",
-  "/walking-dead.jpg"
+  "./horizontal/icon1.png",
+  "./horizontal/icon2.png",
+  "./horizontal/icon3.png",
+  "./horizontal/icon4.png",
+  "./horizontal/icon5.png",
+  "./horizontal/icon6.png",
+  "./horizontal/icon7.png",
+  "./horizontal/icon8.png",
+  "./horizontal/icon9.png",
 ];
 
 export default function Example() {
