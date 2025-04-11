@@ -110,7 +110,7 @@ const Dots = ({ imgIndex, setImgIndex }) => {
           <button
             key={idx}
             onClick={() => setImgIndex(idx)}
-            className={`h-3 w-3 rounded-full transition-colors ${
+            className={`h-2 w-2 sm:h-3 sm:w-3 rounded-full transition-colors ${
               idx === imgIndex ? "bg-neutral-50" : "bg-neutral-500"
             }`}
           />

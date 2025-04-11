@@ -3,6 +3,9 @@ import Navbar from './components/Navbar';
 import Body from './components/Body';
 import { SwipeCarousel } from './components/SwipeCarousel';
 import AboutUs from './components/AboutUs';
+import Example from './components/HorizontalCaurosel';
+import Footer from './components/Footer';
+
 
 export default function App() {
   return (
@@ -11,6 +14,8 @@ export default function App() {
       <SwipeCarousel />
       <Body />
       <AboutUs />
+      <Example />
+      <Footer />
     </>
   );
 }

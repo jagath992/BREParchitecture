@@ -6,11 +6,11 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-[rgb(238,238,238)] backdrop-blur-lg p-4 z-50">
-      <div className="container mx-auto flex justify-between items-center">
-        <img src="/brep-bgr.png" alt="Logo" className="h-15" />
+    <nav className="fixed top-0 left-0 w-full bg-[rgb(238,238,238)] backdrop-blur-lg px-4 py-3 z-50">
+      <div className="max-w-7xl mx-auto flex justify-between items-center">
+        <img src="/brep-bgr.png" alt="Logo" className="h-12" /> {/* changed from h-15 to h-12 */}
         
-        <div className="hidden md:flex space-x-6 ">
+        <div className="hidden md:flex space-x-6">
           {["Projects", "About", "Contact", "Members"].map((item, index) => (
             <motion.a
               key={index}
@@ -32,21 +32,23 @@ const Navbar = () => {
           ☰
         </button>
       </div>
-      
+
       {/* Mobile Menu */}
-      {isOpen && (
-        <motion.ul
-          initial={{ opacity: 0.8, y: -25 }}
-          animate={{ opacity: 1, y: 20 }}
-          transition={{ type: "spring", stiffness: 200 }}
-          className="md:hidden absolute top-16 left-0 w-full bg-[rgb(238,238,238)] p-4 flex flex-col gap-5 text-black font-bold"
-        >
-          <li className="cursor-pointer">Home</li>
-          <li className="cursor-pointer">Projects</li>
-          <li className="cursor-pointer">Contact</li>
-          <li className="cursor-pointer">Members</li>
-        </motion.ul>
-      )}
+      <div className="relative">
+        {isOpen && (
+          <motion.ul
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ type: "spring", stiffness: 300 }}
+            className="md:hidden absolute left-0 top-full w-full bg-[rgb(238,238,238)] p-4 flex flex-col gap-5 text-black font-bold shadow-md"
+          >
+            <li className="cursor-pointer">Home</li>
+            <li className="cursor-pointer">Projects</li>
+            <li className="cursor-pointer">Contact</li>
+            <li className="cursor-pointer">Members</li>
+          </motion.ul>
+        )}
+      </div>
     </nav>
   );
 };
