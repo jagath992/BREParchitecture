@@ -57,4 +57,13 @@ const uploadFile = async (req, res) => {
   }
 };
 
-module.exports = { uploadFile };
+const getProjects = async (req, res) => {
+  try {
+    const projects = await Project.find();  // Fetch all projects
+    res.status(200).json(projects);
+  } catch (err) {
+    res.status(500).json({ message: "Server Error" });
+  }
+};
+
+module.exports = { uploadFile , getProjects};
