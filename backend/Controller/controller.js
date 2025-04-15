@@ -19,11 +19,11 @@ const uploadFile = async (req, res) => {
   try {
     const { projectName, category, description } = req.body;
 
-    // Upload main photo
+   
     const mainPhotoFile = req.files?.mainPhoto?.[0];
     const mainPhotoUpload = await streamUpload(mainPhotoFile.buffer);
 
-    // Upload description photos (if any)
+    
     const descriptionPhotos = [];
 
     if (req.files?.descriptionPhotos) {
@@ -36,7 +36,7 @@ const uploadFile = async (req, res) => {
       }
     }
 
-    // Create project document
+    
     const newProject = new Project({
       projectName,
       category,
@@ -59,7 +59,7 @@ const uploadFile = async (req, res) => {
 
 const getProjects = async (req, res) => {
   try {
-    const projects = await Project.find();  // Fetch all projects
+    const projects = await Project.find();
     res.status(200).json(projects);
   } catch (err) {
     res.status(500).json({ message: "Server Error" });
