@@ -16,7 +16,7 @@ const projectData = [
       { url: "https://res.cloudinary.com/dwafpyiuy/image/upload/v1744674499/jelzkcuqxhso3emm9ysv.png", caption: "Car Porch with LandScape", _id: "67fd9ec43a3d82c7147129c1" }
     ]
   },
-  // Add other projects here...
+
 ];
 
 export default function ProjectsPage() {
