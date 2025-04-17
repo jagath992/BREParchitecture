@@ -66,4 +66,22 @@ const getProjects = async (req, res) => {
   }
 };
 
-module.exports = { uploadFile , getProjects};
+const getProjectsById = async (req, res) => {
+  try {
+    const { id } = req.params; 
+    const project = await Project.findById(id); 
+
+    if (!project) {
+      return res.status(404).json({ message: "Data Not Found" }); 
+    }
+
+    res.status(200).json(project); 
+  } 
+  catch (error) {
+    console.error(error);
+    res.status(500).json({ message: "Server Error" }); 
+  }
+};
+
+
+module.exports = { uploadFile , getProjects ,getProjectsById};
