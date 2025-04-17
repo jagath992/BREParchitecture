@@ -1,7 +1,18 @@
 @import "tailwindcss";
 
-html, body,ul{
+@font-face {
+  font-family: 'Tinos';
+  src: url('../Font/Tinos/Tinos-Regular.ttf') format('truetype'),
+       url('../Font/Tinos/Tinos-Bold.ttf') format('truetype'),
+       url('../Font/Tinos/Tinos-Italic.ttf') format('truetype'),
+       url('../Font/Tinos/Tinos-BoldItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body, ul {
   margin: 0;
   padding: 0;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Tinos', 'Cormorant Garamond', serif;
+  background-color: rgb(238,238,238);
 }
