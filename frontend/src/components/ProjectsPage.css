@@ -16,10 +16,9 @@
 }
 
 .category-navbar button {
-  background-color: white;
-  border: 2px solid #aaa;
+  background-color: rgb(238, 238, 238);
   border-radius: 8px;
-  padding: 8px 16px;
+  padding: 10px;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
@@ -34,12 +33,14 @@
 .project-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 25px;
-  justify-content: center;
+  padding: 0px 100px 10px 100px;
+  gap: 50px;
+  justify-content: space-between;
 }
 
 .project-card {
-  width: 220px;
+  height: 450px;
+  width: 390px;
   background-color: #fafafa;
   border: 1px solid #ddd;
   border-radius: 12px;
@@ -56,7 +57,7 @@
 
 .project-card img {
   width: 100%;
-  height: 160px;
+  height: 80%;
   object-fit: cover;
 }
 
@@ -64,7 +65,7 @@
   padding: 10px;
   text-align: center;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 20px;
 }
 
 @media (max-width: 768px) {
@@ -74,7 +75,6 @@
 
   .category-navbar {
     background-color: #f0f0f0;
-    padding: 12px 20px;
     margin-bottom: 30px;
     display: flex;
     gap: 20px;
@@ -92,11 +92,12 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    padding: 0px;
   }
 
   .project-card {
     width: 90%;
-    max-width: 320px;
+    max-width: 270px;
   }
 
   .project-card img {

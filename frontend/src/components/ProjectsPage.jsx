@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import fetchProjects from '../utils/fetchProjects';
-import './ProjectsPage.css'; // <-- make sure to import the css here
+import './ProjectsPage.css'; 
 
 export default function ProjectPage() {
   const [residential, setResidential] = useState([]);
