@@ -1,5 +1,5 @@
 import * as React from "react";
-import { animated, useSpring } from "@react-spring/web"; 
+import { animated, useSpring } from '@react-spring/web';
 import { useScroll } from "react-use-gesture";
 import "./HorizontalCaurosel.css";
 

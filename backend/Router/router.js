@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const multer = require("multer");
-const { uploadFile , getProjects } = require("../Controller/controller");
+const { uploadFile , getProjects ,getProjectsById } = require("../Controller/controller");
 
 const upload = multer(); 
 
@@ -16,5 +16,6 @@ router.post(
 );
 
 router.get("/projects", getProjects);
+router.get("/projects/:id", getProjectsById);
 
 module.exports = router;
