@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import fetchProjects from '../utils/fetchProjects';
+import fetchProjects from '../../utils/fetchProjects';
 import './ProjectsPage.css'; 
 
 export default function ProjectPage() {

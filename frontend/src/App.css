@@ -2,10 +2,10 @@
 
 @font-face {
   font-family: 'Tinos';
-  src: url('../Font/Tinos/Tinos-Regular.ttf') format('truetype'),
-       url('../Font/Tinos/Tinos-Bold.ttf') format('truetype'),
-       url('../Font/Tinos/Tinos-Italic.ttf') format('truetype'),
-       url('../Font/Tinos/Tinos-BoldItalic.ttf') format('truetype');
+  src: url('./Font/Tinos/Tinos-Regular.ttf') format('truetype'),
+       url('./Font/Tinos/Tinos-Bold.ttf') format('truetype'),
+       url('./Font/Tinos/Tinos-Italic.ttf') format('truetype'),
+       url('./Font/Tinos/Tinos-BoldItalic.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
