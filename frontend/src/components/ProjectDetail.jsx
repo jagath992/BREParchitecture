@@ -4,13 +4,13 @@ import axios from 'axios';
 import './ProjectDetail.css';
 
 export default function ProjectDetail() {
-  const { id } = useParams(); // Get the project ID from the URL
+  const { id } = useParams(); 
   const [project, setProject] = useState(null);
 
   useEffect(() => {
     const fetchProjectDetail = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/projects/${id}`); // Fetch project by ID
+        const response = await axios.get(`http://localhost:5000/projects/${id}`); 
         setProject(response.data);
       } catch (error) {
         console.error('Error fetching project details:', error);

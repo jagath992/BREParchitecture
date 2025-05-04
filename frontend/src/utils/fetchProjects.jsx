@@ -2,12 +2,11 @@ import axios from 'axios';
 
 const fetchProjects = async () => {
   try {
-    const response = await axios.get("http://localhost:5000/projects"); // Adjust port if needed
+    const response = await axios.get("http://localhost:5000/projects"); 
     const projectDetails = response.data;
 
-    // Categorize projects
     const residential = projectDetails.filter(
-      (project) => project.category === "home" // Adjusted category name
+      (project) => project.category === "home" 
     );
     const commercial = projectDetails.filter(
       (project) => project.category === "commercial"
