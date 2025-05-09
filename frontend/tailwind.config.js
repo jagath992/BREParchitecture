@@ -2,11 +2,10 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {
-      fontFamily: {
-        tinos: ['Tinos', 'serif'], // Add Tinos font
-      },
-    },
+    extend: {},
   },
   plugins: [],
+  corePlugins: {
+    preflight: true,
+  },
 };

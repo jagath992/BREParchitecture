@@ -1,0 +1,62 @@
+.projects-heading {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Tinos', serif;
+}
+
+.projects-heading h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Wrapper to block overflow */
+.carousel-wrapper {
+  width: 100vw;
+  overflow-x: hidden;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+  padding: 20px 0;
+  margin: 30px 0 0 0;
+  scrollbar-width: 2px;
+  gap: 20px;
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Cards */
+.card {
+  flex: 0 0 300px;
+  height: 200px;
+  border-radius: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
