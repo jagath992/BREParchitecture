@@ -61,43 +61,38 @@ const Dashboard = () => {
   }
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      {/* Stats Section */}
-      <div className="mb-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
-            <h2 className="text-2xl font-semibold mb-4 text-gray-800">
-              Total Projects
-            </h2>
-            <p className="text-4xl font-bold text-indigo-600">
-              {Array.isArray(projects) ? projects.length : 0}
-            </p>
-          </div>
-          <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
-            <h2 className="text-2xl font-semibold mb-4 text-gray-800">
-              Total Admins
-            </h2>
-            <p className="text-4xl font-bold text-indigo-600">
-              {Array.isArray(admins) ? admins.length : 0}
-            </p>
-          </div>
-        </div>
-      </div>
-
-      {/* Projects Section */}
-      <div className="bg-white rounded-lg shadow-lg p-6">
-        <header className="mb-8">
-          <h1 className="text-3xl font-bold text-gray-900">Projects</h1>
-          <p className="text-gray-600 mt-2">
-            Manage your architectural projects
-          </p>
-        </header>
-
-        {projectCards}
-      </div>
-
-      <FloatingActionButton to="/admin/add-project" />
+    <div className="space-y-8">
+  {/* Stats Section */}
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
+      <h2 className="text-xl font-semibold text-gray-700">Total Projects</h2>
+      <p className="text-3xl font-bold text-indigo-600 mt-2">
+        {Array.isArray(projects) ? projects.length : 0}
+      </p>
     </div>
+    <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
+      <h2 className="text-xl font-semibold text-gray-700">Total Admins</h2>
+      <p className="text-3xl font-bold text-indigo-600 mt-2">
+        {Array.isArray(admins) ? admins.length : 0}
+      </p>
+    </div>
+  </div>
+
+  {/* Projects Section */}
+  <div className="bg-white rounded-lg shadow-md p-6">
+    <header className="mb-4">
+      <h1 className="text-2xl font-bold text-gray-900">Projects</h1>
+      <p className="text-gray-600 text-sm">Manage your architectural projects</p>
+    </header>
+
+    {/* Cards injected here */}
+    {projectCards}
+  </div>
+
+  {/* Floating Button */}
+  <FloatingActionButton to="/admin/add-project" />
+</div>
+
   );
 };
 
